@@ -1,0 +1,93 @@
+Django Word Document CRUD Application Documentation
+Table of Contents
+Introduction
+Installation
+Configuration
+Usage
+Custom User Roles
+Views and URLs
+Templates
+Admin Panel
+Deployment
+Contributing
+License
+
+1. Introduction
+	The Django Word Document CRUD Application is a web-based system that allows users to Create, Read, Update, and Delete Word documents (or files in general) while providing a user authentication system with two roles: Author and Collaborator. Users can upload Word documents, view their list, edit document details, and delete documents.
+
+2. Installation
+	Before installing the application, ensure you have the following prerequisites:
+
+	Python 3.x
+	Django
+	Other dependencies (as listed in requirements.txt)
+	Follow these steps to install the application:
+
+	Clone the repository:
+
+	bash
+	Copy code
+	git clone https://github.com/slnxanns/sylla
+	cd your_project
+	Create a virtual environment (optional but recommended):
+
+	bash
+	Copy code
+	python -m venv venv
+	source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
+	Install dependencies:
+
+	bash
+	Copy code
+	pip install -r requirements.txt
+
+3. Configuration
+	Configure the Django project settings:
+
+	Update the database settings in settings.py if necessary.
+	Configure AWS S3 settings in settings.py if you want to use AWS S3 for file storage.
+
+4. Usage
+	User Registration and Authentication
+	Register new users through the registration form.
+	Users can log in and log out using their credentials.
+	Passwords are validated based on Django's password complexity requirements.
+	CRUD Operations on Documents
+	Users with the "Author" role can create, edit, and delete documents.
+	Users with the "Collaborator" role can view and edit documents.
+	Documents are stored on AWS S3 if configured; otherwise, they are stored locally.
+
+5. Custom User Roles
+	The application defines two custom user roles: "Author" and "Collaborator."
+	Users can be assigned these roles during registration or later through the admin panel.
+
+6. Views and URLs
+	The application includes views and URLs for document CRUD operations.
+	URL patterns are defined in document_app/urls.py.
+	Views are defined in document_app/views.py.
+
+7. Templates
+	Templates for the application are stored in the document_app/templates directory.
+	Template files include:
+	document_list.html: Displays a list of documents and links for CRUD actions.
+	document_form.html: Provides a form for creating and editing documents.
+	document_confirm_delete.html: Confirms document deletion.
+
+8. Admin Panel
+	The Django admin panel is used for managing user roles, including assigning roles to users.
+	Custom user roles are defined in the admin panel.
+	User accounts and documents can be managed through the admin panel as well.
+
+9. Deployment
+	To deploy the application in a production environment, you'll need to configure the server, set up a database, and use a web server like Apache or Nginx with Gunicorn. Detailed deployment instructions may vary depending on your hosting environment.
+
+10. Contributing
+	Contributions to this project are welcome! If you'd like to contribute, please follow these guidelines:
+
+	Fork the repository.
+	Create a new branch for your feature or bug fix.
+	Commit your changes and push to your fork.
+	Submit a pull request with a clear description of your changes.
+
+11. License
+	This project is licensed under the [Your License Name] License - see the LICENSE file for details.

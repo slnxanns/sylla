@@ -1,0 +1,31 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+  <div class="module">
+    <table>
+      <caption>Document List</caption>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for document in documents %}
+          <tr>
+            <td>{{ document.title }}</td>
+            <td>
+              <a href="{% url 'edit_document' document.pk %}">Edit</a> |
+              <a href="{% url 'delete_document' document.pk %}">Delete</a>
+            </td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td colspan="2">No documents available.</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="{% url 'create_document' %}" class="addlink">Add Document</a>
+  </div>
+{% endblock %}

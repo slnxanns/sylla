@@ -1,0 +1,89 @@
+Here are the details to the coding Challenge:
+
+As the next step in our hiring process, we would like to invite you to complete a coding challenge that will help us evaluate your technical skills. This challenge is designed to assess your problem-solving abilities and coding proficiency. We kindly request that you complete this challenge within the next 48 hours.
+
+
+
+Coding Challenge Details:
+Challenge: Laravel Coding Challenge
+Duration: Approximately 48 hours
+Recording Requirement: You are required to record your screen, displaying the entire coding challenge, while simultaneously showing your face via your camera. This recording will serve as your explanation and demonstration of the solution.
+Recording Link: You are free to use any recording tool, as long as it allows us to access and view the recording online via a provided link.
+GitHub Repository: Please submit your completed coding challenge on GitHub, and provide us with the link to your repository.
+
+
+
+To access the coding challenge, please follow this link: https://docs.google.com/document/d/1ocGjyHZevwDxFOaR3rHNMrM86lfaKBlhXRfm6qiIYsI/edit?usp=sharing
+
+
+
+Be sure to carefully read and understand the instructions before you begin.
+
+
+
+Important Note: Failure to submit the coding challenge recording link, and GitHub repository within 48 hours from the time you receive this email will result in the automatic disqualification of your application.
+
+
+
+We look forward to reviewing your solution and learning more about your skills. Good luck with the coding challenge!
+
+
+
+Best regards,
+
+
+################################################################################################
+################################################################################################
+################################################################################################
+################################################################################################
+################################################################################################
+
+
+
+
+
+Cloud Book Writer Platform
+
+Objective: Build a next-generation cloud-based platform where users can write, save, and collaborate on books. The platform should prioritize seamless collaboration and cloud storage, ensuring users don't need to manage local files.
+
+Core Features:
+1. Unlimited Sections and Subsections:
+	Users should be able to create an unlimited number of sections within their books.
+	Each section can contain multiple subsections, and these subsections can further contain their own child subsections. This nesting can go to infinite levels.
+	For instance, a section titled "Introduction" might have subsections like "Intro to Platform" and "Intro to Book Writing." The "Intro to Platform" subsection might further contain its own subsection titled "Intro to Platform (Menu Bar)."
+2. User Authentication.
+3. Permissions & Roles:
+	Implement roles such as Author and Collaborator.
+	Only Author should have the ability to create new sections/subsections. However, both Author and Collaborator can edit them.
+	Author should be able to grant or revoke access to specific collaborators.
+
+Bonus (optional):
+1. Writing Test Cases
+2. Caching results for swift response times.
+3. Use PEP-8 coding style.
+4. Use Django Framework
+
+Documentation Clarity:
+It's essential that the documentation for your solution is crystal clear. We understand that there might be instances where certain specifications could be ambiguous. In such cases, please make your best assumption and proceed. However, it's crucial to clearly document these assumptions in your submission. This helps us understand your thought process and ensures that all parties are on the same page.
+
+Submission:
+Provide the source code, database schema, API documentation, and a brief overview of how you've approached and implemented the task. Mention any trade-offs or decisions you made during the implementation.
+
+
+
+
+################################################################################################
+################################################################################################
+################################################################################################
+################################################################################################
+################################################################################################
+
+
+
+write code in python django
+
+you need to build a application in which users can do CRUD operations in word document file. use django super admin to do CRUD operations on word document via TinyMCE.
+
+i want to store word documents on AWS S3. Use SQLITE3 to create proper schema.
+
+

@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+  <div class="module">
+    <h2>{{ title }}</h2>
+    <form enctype="multipart/form-data" method="post" action="">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Save">
+    </form>
+    <a href="{% url 'document_list' %}">Back to Document List</a>
+  </div>
+{% endblock %}
